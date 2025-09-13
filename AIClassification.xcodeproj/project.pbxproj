@@ -6,15 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2A9245A72E758871007C3B97 /* AIClassificationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9245A32E758871007C3B97 /* AIClassificationApp.swift */; };
+		2A9245A82E758871007C3B97 /* ImageClassificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9245A52E758871007C3B97 /* ImageClassificationView.swift */; };
+		2A9245A92E758871007C3B97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A9245A42E758871007C3B97 /* Assets.xcassets */; };
+		2A9245B12E758872007C3B97 /* AIClassificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9245AF2E758872007C3B97 /* AIClassificationTests.swift */; };
+		2A9245B32E7588C7007C3B97 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2A9245B22E7588C7007C3B97 /* MobileNetV2.mlmodel */; };
+		2A9245B62E7588FF007C3B97 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9245B52E7588FF007C3B97 /* ImageClassifier.swift */; };
+		2A9245B82E758AD8007C3B97 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9245B72E758AD8007C3B97 /* ImagePicker.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		2A9245872E758860007C3B97 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2A9245712E75885A007C3B97 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2A9245782E75885A007C3B97;
-			remoteInfo = AIClassification;
-		};
-		2A9245912E758860007C3B97 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A9245712E75885A007C3B97 /* Project object */;
 			proxyType = 1;
@@ -26,26 +29,14 @@
 /* Begin PBXFileReference section */
 		2A9245792E75885A007C3B97 /* AIClassification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIClassification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9245862E758860007C3B97 /* AIClassificationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIClassificationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A9245902E758860007C3B97 /* AIClassificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIClassificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A9245A32E758871007C3B97 /* AIClassificationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIClassificationApp.swift; sourceTree = "<group>"; };
+		2A9245A42E758871007C3B97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A9245A52E758871007C3B97 /* ImageClassificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassificationView.swift; sourceTree = "<group>"; };
+		2A9245AF2E758872007C3B97 /* AIClassificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIClassificationTests.swift; sourceTree = "<group>"; };
+		2A9245B22E7588C7007C3B97 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		2A9245B52E7588FF007C3B97 /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
+		2A9245B72E758AD8007C3B97 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		2A92457B2E75885A007C3B97 /* AIClassification */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = AIClassification;
-			sourceTree = "<group>";
-		};
-		2A9245892E758860007C3B97 /* AIClassificationTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = AIClassificationTests;
-			sourceTree = "<group>";
-		};
-		2A9245932E758860007C3B97 /* AIClassificationUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = AIClassificationUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2A9245762E75885A007C3B97 /* Frameworks */ = {
@@ -62,22 +53,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A92458D2E758860007C3B97 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		2A9245702E75885A007C3B97 = {
 			isa = PBXGroup;
 			children = (
-				2A92457B2E75885A007C3B97 /* AIClassification */,
-				2A9245892E758860007C3B97 /* AIClassificationTests */,
-				2A9245932E758860007C3B97 /* AIClassificationUITests */,
+				2A9245A62E758871007C3B97 /* AIClassification */,
+				2A9245B02E758872007C3B97 /* AIClassificationTests */,
 				2A92457A2E75885A007C3B97 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,9 +70,45 @@
 			children = (
 				2A9245792E75885A007C3B97 /* AIClassification.app */,
 				2A9245862E758860007C3B97 /* AIClassificationTests.xctest */,
-				2A9245902E758860007C3B97 /* AIClassificationUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2A9245A62E758871007C3B97 /* AIClassification */ = {
+			isa = PBXGroup;
+			children = (
+				2A9245B42E7588EF007C3B97 /* Helper */,
+				2A9245B92E758B23007C3B97 /* Model */,
+				2A9245A32E758871007C3B97 /* AIClassificationApp.swift */,
+				2A9245A42E758871007C3B97 /* Assets.xcassets */,
+				2A9245A52E758871007C3B97 /* ImageClassificationView.swift */,
+			);
+			path = AIClassification;
+			sourceTree = "<group>";
+		};
+		2A9245B02E758872007C3B97 /* AIClassificationTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A9245AF2E758872007C3B97 /* AIClassificationTests.swift */,
+			);
+			path = AIClassificationTests;
+			sourceTree = "<group>";
+		};
+		2A9245B42E7588EF007C3B97 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2A9245B52E7588FF007C3B97 /* ImageClassifier.swift */,
+				2A9245B72E758AD8007C3B97 /* ImagePicker.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		2A9245B92E758B23007C3B97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A9245B22E7588C7007C3B97 /* MobileNetV2.mlmodel */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,9 +125,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				2A92457B2E75885A007C3B97 /* AIClassification */,
 			);
 			name = AIClassification;
 			packageProductDependencies = (
@@ -130,38 +146,12 @@
 			dependencies = (
 				2A9245882E758860007C3B97 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				2A9245892E758860007C3B97 /* AIClassificationTests */,
-			);
 			name = AIClassificationTests;
 			packageProductDependencies = (
 			);
 			productName = AIClassificationTests;
 			productReference = 2A9245862E758860007C3B97 /* AIClassificationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		2A92458F2E758860007C3B97 /* AIClassificationUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2A9245A02E758860007C3B97 /* Build configuration list for PBXNativeTarget "AIClassificationUITests" */;
-			buildPhases = (
-				2A92458C2E758860007C3B97 /* Sources */,
-				2A92458D2E758860007C3B97 /* Frameworks */,
-				2A92458E2E758860007C3B97 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2A9245922E758860007C3B97 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				2A9245932E758860007C3B97 /* AIClassificationUITests */,
-			);
-			name = AIClassificationUITests;
-			packageProductDependencies = (
-			);
-			productName = AIClassificationUITests;
-			productReference = 2A9245902E758860007C3B97 /* AIClassificationUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -177,10 +167,6 @@
 						CreatedOnToolsVersion = 16.4;
 					};
 					2A9245852E758860007C3B97 = {
-						CreatedOnToolsVersion = 16.4;
-						TestTargetID = 2A9245782E75885A007C3B97;
-					};
-					2A92458F2E758860007C3B97 = {
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = 2A9245782E75885A007C3B97;
 					};
@@ -202,7 +188,6 @@
 			targets = (
 				2A9245782E75885A007C3B97 /* AIClassification */,
 				2A9245852E758860007C3B97 /* AIClassificationTests */,
-				2A92458F2E758860007C3B97 /* AIClassificationUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,17 +197,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9245A92E758871007C3B97 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2A9245842E758860007C3B97 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2A92458E2E758860007C3B97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -236,6 +215,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9245B62E7588FF007C3B97 /* ImageClassifier.swift in Sources */,
+				2A9245B32E7588C7007C3B97 /* MobileNetV2.mlmodel in Sources */,
+				2A9245B82E758AD8007C3B97 /* ImagePicker.swift in Sources */,
+				2A9245A72E758871007C3B97 /* AIClassificationApp.swift in Sources */,
+				2A9245A82E758871007C3B97 /* ImageClassificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,13 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2A92458C2E758860007C3B97 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				2A9245B12E758872007C3B97 /* AIClassificationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,11 +238,6 @@
 			isa = PBXTargetDependency;
 			target = 2A9245782E75885A007C3B97 /* AIClassification */;
 			targetProxy = 2A9245872E758860007C3B97 /* PBXContainerItemProxy */;
-		};
-		2A9245922E758860007C3B97 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2A9245782E75885A007C3B97 /* AIClassification */;
-			targetProxy = 2A9245912E758860007C3B97 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -405,6 +378,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -433,6 +407,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,40 +459,6 @@
 			};
 			name = Release;
 		};
-		2A9245A12E758860007C3B97 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RZZ472J6K5;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Ibrahim.Gedami.com.AIClassificationUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AIClassification;
-			};
-			name = Debug;
-		};
-		2A9245A22E758860007C3B97 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RZZ472J6K5;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Ibrahim.Gedami.com.AIClassificationUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AIClassification;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -544,15 +485,6 @@
 			buildConfigurations = (
 				2A92459E2E758860007C3B97 /* Debug */,
 				2A92459F2E758860007C3B97 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2A9245A02E758860007C3B97 /* Build configuration list for PBXNativeTarget "AIClassificationUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2A9245A12E758860007C3B97 /* Debug */,
-				2A9245A22E758860007C3B97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
