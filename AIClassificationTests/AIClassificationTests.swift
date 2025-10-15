@@ -8,10 +8,9 @@
 import Testing
 @testable import AIClassification
 
-struct AIClassificationTests {
-
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+struct AIClassifierTests {
+    
+    @Test func example() {
+        #expect(1 + 1 == 2, "Basic math should work")
     }
-
 }

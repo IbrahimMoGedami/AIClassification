@@ -1,0 +1,19 @@
+{
+  "" : {
+    "diagnostics" : "/Users/ibrahimogedami/Documents/GitHub/AIClassification/DerivedData/Build/Intermediates.noindex/AIClassification.build/Debug-iphonesimulator/AIClassificationTests.build/Objects-normal/arm64/AIClassificationTests-primary.dia",
+    "emit-module-dependencies" : "/Users/ibrahimogedami/Documents/GitHub/AIClassification/DerivedData/Build/Intermediates.noindex/AIClassification.build/Debug-iphonesimulator/AIClassificationTests.build/Objects-normal/arm64/AIClassificationTests-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/ibrahimogedami/Documents/GitHub/AIClassification/DerivedData/Build/Intermediates.noindex/AIClassification.build/Debug-iphonesimulator/AIClassificationTests.build/Objects-normal/arm64/AIClassificationTests-primary-emit-module.dia",
+    "pch" : "/Users/ibrahimogedami/Documents/GitHub/AIClassification/DerivedData/Build/Intermediates.noindex/AIClassification.build/Debug-iphonesimulator/AIClassificationTests.build/Objects-normal/arm64/AIClassificationTests-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/ibrahimogedami/Documents/GitHub/AIClassification/DerivedData/Build/Intermediates.noindex/AIClassification.build/Debug-iphonesimulator/AIClassificationTests.build/Objects-normal/arm64/AIClassificationTests-primary.swiftdeps"
+  },
+  "/Users/ibrahimogedami/Documents/GitHub/AIClassification/AIClassificationTests/AIClassificationTests.swift" : {
+    "const-values" : "/Users/ibrahimogedami/Documents/GitHub/AIClassification/DerivedData/Build/Intermediates.noindex/AIClassification.build/Debug-iphonesimulator/AIClassificationTests.build/Objects-normal/arm64/AIClassificationTests.swiftconstvalues",
+    "dependencies" : "/Users/ibrahimogedami/Documents/GitHub/AIClassification/DerivedData/Build/Intermediates.noindex/AIClassification.build/Debug-iphonesimulator/AIClassificationTests.build/Objects-normal/arm64/AIClassificationTests.d",
+    "diagnostics" : "/Users/ibrahimogedami/Documents/GitHub/AIClassification/DerivedData/Build/Intermediates.noindex/AIClassification.build/Debug-iphonesimulator/AIClassificationTests.build/Objects-normal/arm64/AIClassificationTests.dia",
+    "index-unit-output-path" : "/AIClassification.build/Debug-iphonesimulator/AIClassificationTests.build/Objects-normal/arm64/AIClassificationTests.o",
+    "llvm-bc" : "/Users/ibrahimogedami/Documents/GitHub/AIClassification/DerivedData/Build/Intermediates.noindex/AIClassification.build/Debug-iphonesimulator/AIClassificationTests.build/Objects-normal/arm64/AIClassificationTests.bc",
+    "object" : "/Users/ibrahimogedami/Documents/GitHub/AIClassification/DerivedData/Build/Intermediates.noindex/AIClassification.build/Debug-iphonesimulator/AIClassificationTests.build/Objects-normal/arm64/AIClassificationTests.o",
+    "swift-dependencies" : "/Users/ibrahimogedami/Documents/GitHub/AIClassification/DerivedData/Build/Intermediates.noindex/AIClassification.build/Debug-iphonesimulator/AIClassificationTests.build/Objects-normal/arm64/AIClassificationTests.swiftdeps",
+    "swiftmodule" : "/Users/ibrahimogedami/Documents/GitHub/AIClassification/DerivedData/Build/Intermediates.noindex/AIClassification.build/Debug-iphonesimulator/AIClassificationTests.build/Objects-normal/arm64/AIClassificationTests~partial.swiftmodule"
+  }
+}

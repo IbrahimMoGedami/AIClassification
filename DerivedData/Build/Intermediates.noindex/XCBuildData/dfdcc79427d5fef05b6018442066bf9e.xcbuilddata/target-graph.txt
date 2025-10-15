@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'AIClassificationTests' in project 'AIClassification'
+➜ Explicit dependency on target 'AIClassification' in project 'AIClassification'
+Target 'AIClassification' in project 'AIClassification' (no dependencies)

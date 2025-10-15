@@ -1,0 +1,16 @@
+{
+  "source": "/Users/ibrahimogedami/Documents/GitHub/AIClassification/AIClassification/Scene/ImageSegmentation/ImageSegmentationView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Run Image Segmentation",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 36
+        }
+      }
+    ]
+  },
+  "version": 1
+}
