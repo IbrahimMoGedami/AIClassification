@@ -24,16 +24,20 @@ jobs:
         ruby-version: 3.3.0
         bundler-cache: true
 
-    - name: Install Fastlane
-      run: gem install fastlane
+    - name: Install dependencies
+      run: |
+        gem install fastlane
+        gem install abbrev  # Fix the warning
 
     - name: List available simulators
       run: xcrun simctl list devices
 
-    - name: Boot iPhone 17 Pro simulator
+    - name: Create iPhone 16 Pro simulator with iOS 18.5
       run: |
-        xcrun simctl boot "iPhone 17 Pro" || true
-        sleep 10
+        # Delete existing simulator if it exists
+        xcrun simctl delete "iPhone 16 Pro CI" || true
+        # Create new simulator with specific runtime
+        xcrun simctl create "iPhone 16 Pro CI" "iPhone 16 Pro" com.apple.CoreSimulator.SimRuntime.iOS-18-5
 
     - name: Run Unit Tests
       run: bundle exec fastlane unit_test
