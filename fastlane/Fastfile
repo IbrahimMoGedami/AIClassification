@@ -45,7 +45,14 @@ platform :ios do
       output_directory: "./fastlane/test_output",
       output_types: "html,junit",
       output_files: "report.html,report.junit",
-      buildlog_path: "./fastlane/build_logs"
+      buildlog_path: "./fastlane/build_logs",
+      disable_concurrent_testing: true,
+      reset_simulator: true,
+      prelaunch_simulator: true,
+      max_concurrent_simulators: 1,
+      derived_data_path: "./DerivedData",
+      xcargs: "-quiet",
+      fail_build: true
     )
   end
 
@@ -68,7 +75,9 @@ platform :ios do
       output_directory: "./fastlane/test_output",
       output_types: "html,junit",
       output_files: "report.html,report.junit",
-      buildlog_path: "./fastlane/build_logs"
+      buildlog_path: "./fastlane/build_logs",
+      reset_simulator: false,
+      prelaunch_simulator: false
     )
   end
 end

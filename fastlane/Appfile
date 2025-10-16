@@ -1,6 +1,3 @@
 app_identifier("Ibrahim.Gedami.com.AIClassification")
 apple_id("hemagedamy@gmail.com")
 
-
-# For more information about the Appfile, see:
-#     https://docs.fastlane.tools/advanced/#appfile
