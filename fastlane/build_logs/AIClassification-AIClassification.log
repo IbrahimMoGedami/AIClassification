@@ -1,0 +1,17 @@
+
+Warning: -disable-concurrent-testing is deprecated. Use -disable-concurrent-destination-testing instead.
+/Users/ibrahimogedami/Documents/GitHub/AIClassification/AIClassification/CoreMLHelpers/MLMultiArray+Image.swift:75:5: warning: switch must be exhaustive
+    switch self.dataType {
+    ^
+/Users/ibrahimogedami/Documents/GitHub/AIClassification/AIClassification/CoreMLHelpers/MLMultiArray+Image.swift:75:5: note: add missing case: '.float16'
+    switch self.dataType {
+    ^
+/Users/ibrahimogedami/Documents/GitHub/AIClassification/AIClassification/CoreMLHelpers/MLMultiArray+Image.swift:75:5: note: add missing case: '.int8'
+    switch self.dataType {
+    ^
+/Users/ibrahimogedami/Documents/GitHub/AIClassification/AIClassification/CoreMLHelpers/MLMultiArray+Image.swift:75:5: note: add missing cases
+    switch self.dataType {
+    ^
+Testing started
+Test suite 'AIClassifierTests' started on 'Clone 1 of iPhone 17 Pro - AIClassification (61145)'
+Test case 'AIClassifierTests/example()' passed on 'Clone 1 of iPhone 17 Pro - AIClassification (61145)' (0.000 seconds)
