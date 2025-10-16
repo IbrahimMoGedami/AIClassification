@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		256A55632EA09283008F7275 /* cicd.yml in Resources */ = {isa = PBXBuildFile; fileRef = 256A55622EA09283008F7275 /* cicd.yml */; };
 		2A9245A72E758871007C3B97 /* AIClassificationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9245A32E758871007C3B97 /* AIClassificationApp.swift */; };
 		2A9245A92E758871007C3B97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A9245A42E758871007C3B97 /* Assets.xcassets */; };
 		2A9245B12E758872007C3B97 /* AIClassificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9245AF2E758872007C3B97 /* AIClassificationTests.swift */; };
@@ -53,6 +54,8 @@
 /* Begin PBXFileReference section */
 		256A555D2E9F3E26008F7275 /* Appfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
 		256A555E2E9F3E26008F7275 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		256A55622EA09283008F7275 /* cicd.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = cicd.yml; sourceTree = "<group>"; };
+		256A55642EA0933D008F7275 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		2A9245792E75885A007C3B97 /* AIClassification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIClassification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9245862E758860007C3B97 /* AIClassificationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIClassificationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9245A32E758871007C3B97 /* AIClassificationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIClassificationApp.swift; sourceTree = "<group>"; };
@@ -111,13 +114,31 @@
 			children = (
 				256A555D2E9F3E26008F7275 /* Appfile */,
 				256A555E2E9F3E26008F7275 /* Fastfile */,
+				256A55642EA0933D008F7275 /* Gemfile */,
 			);
 			path = fastlane;
+			sourceTree = "<group>";
+		};
+		256A55602EA0924C008F7275 /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				256A55622EA09283008F7275 /* cicd.yml */,
+			);
+			path = workflows;
+			sourceTree = "<group>";
+		};
+		256A55612EA0924C008F7275 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				256A55602EA0924C008F7275 /* workflows */,
+			);
+			path = .github;
 			sourceTree = "<group>";
 		};
 		2A9245702E75885A007C3B97 = {
 			isa = PBXGroup;
 			children = (
+				256A55612EA0924C008F7275 /* .github */,
 				256A555F2E9F3E26008F7275 /* fastlane */,
 				2A9245A62E758871007C3B97 /* AIClassification */,
 				2A9245B02E758872007C3B97 /* AIClassificationTests */,
@@ -354,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A9245A92E758871007C3B97 /* Assets.xcassets in Resources */,
+				256A55632EA09283008F7275 /* cicd.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

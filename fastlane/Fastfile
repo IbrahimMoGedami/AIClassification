@@ -13,19 +13,62 @@
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
 
+#default_platform(:ios)
+#
+#platform :ios do
+#  desc "Run unit tests"
+#  lane :unit_test do
+#    run_tests(
+#      scheme: "AIClassification",
+#      device: "iPhone 17 Pro",
+#      clean: true,                 # Clean before testing
+#      output_directory: "./fastlane/test_output",
+#      output_types: "html,junit",
+#      output_files: "report.html,report.junit",
+#      disable_concurrent_testing: true
+#    )
+#  end
+#end
+
 default_platform(:ios)
 
 platform :ios do
   desc "Run unit tests"
   lane :unit_test do
+    # Ensure we're on main thread for CI
+    setup_ci
+    
     run_tests(
       scheme: "AIClassification",
-      device: "iPhone 17 Pro",
-      clean: true,                 # Clean before testing
+      devices: ["iPhone 17 Pro"],
+      clean: true,
       output_directory: "./fastlane/test_output",
       output_types: "html,junit",
       output_files: "report.html,report.junit",
-      disable_concurrent_testing: true
+      buildlog_path: "./fastlane/build_logs"
+    )
+  end
+
+  # Additional lane for CI with more options
+  desc "Run tests for CI environment"
+  lane :ci_test do
+    unit_test
+  end
+
+  # Lane for local development
+  desc "Run tests locally with visible simulator"
+  lane :local_test do
+    # Boot simulator first for visibility
+    sh "xcrun simctl boot 'iPhone 17 Pro'"
+    
+    run_tests(
+      scheme: "AIClassification",
+      devices: ["iPhone 17 Pro"],
+      clean: true,
+      output_directory: "./fastlane/test_output",
+      output_types: "html,junit",
+      output_files: "report.html,report.junit",
+      buildlog_path: "./fastlane/build_logs"
     )
   end
 end
