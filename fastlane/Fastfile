@@ -29,7 +29,7 @@
 #    )
 #  end
 #end
-
+opt_out_usage
 default_platform(:ios)
 
 platform :ios do
@@ -38,9 +38,19 @@ platform :ios do
     # Ensure we're on main thread for CI
     setup_ci
     
+    # Get available devices and use the first iPhone
+    available_devices = sh("xcrun simctl list devices available | grep -i 'iphone' | head -1 | cut -d '(' -f 1 | xargs").chomp
+    
+    if available_devices.empty?
+      available_devices = ["iPhone 16 Pro"]
+    else
+      puts "Using available device: #{available_devices}"
+      available_devices = [available_devices]
+    end
+    
     run_tests(
       scheme: "AIClassification",
-      devices: ["iPhone 17 Pro"],
+      devices: available_devices,
       clean: true,
       output_directory: "./fastlane/test_output",
       output_types: "html,junit",
@@ -52,11 +62,12 @@ platform :ios do
       max_concurrent_simulators: 1,
       derived_data_path: "./DerivedData",
       xcargs: "-quiet",
-      fail_build: true
+      fail_build: true,
+      deployment_target_version: "18.5"  # Match your app's deployment target
     )
   end
 
-  # Additional lane for CI with more options
+  # Lane for CI with specific device
   desc "Run tests for CI environment"
   lane :ci_test do
     unit_test
@@ -66,18 +77,19 @@ platform :ios do
   desc "Run tests locally with visible simulator"
   lane :local_test do
     # Boot simulator first for visibility
-    sh "xcrun simctl boot 'iPhone 17 Pro'"
+    sh "xcrun simctl boot 'iPhone 16 Pro' || true"
     
     run_tests(
       scheme: "AIClassification",
-      devices: ["iPhone 17 Pro"],
+      devices: ["iPhone 16 Pro"],
       clean: true,
       output_directory: "./fastlane/test_output",
       output_types: "html,junit",
       output_files: "report.html,report.junit",
       buildlog_path: "./fastlane/build_logs",
-      reset_simulator: false,
-      prelaunch_simulator: false
+      reset_simulator: false,  # Don't reset to keep simulator visible
+      prelaunch_simulator: false,
+      deployment_target_version: "18.5"
     )
   end
 end
